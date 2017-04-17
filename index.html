@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="wap-font-scale" content="no">
+		<title>下拉刷新 卡住反馈工程</title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<nav id="bar" class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item mui-active" href="tab-main.html" data-id="main" id="main">
+					<i class="schoolbb icon-home"></i>
+					<span class="mui-tab-label">大力拉这个页面</span>
+				</a>
+				<a class="mui-tab-item" href="tab-school.html" data-id="school" id="school">
+					<i class="schoolbb icon-school"></i>
+					<span class="mui-tab-label" id="text-school">打不开</span>
+				</a>
+				<a class="mui-tab-item" href="tab-cart.html" data-id="cart" id="cart">
+					<i class="schoolbb icon-gift"></i>
+					<span class="mui-tab-label">也打不开</span>
+				</a>
+				<a class="mui-tab-item" href="tab-mine.html" data-id="mine" id="mine">
+					<span class="schoolbb icon-my"></span>
+					<span class="mui-tab-label">别点了</span>
+				</a>
+			</nav>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script>
+			mui.init();
+			var index = null;
+			var tabs = {};
+			var current = '';
+
+			mui.plusReady(function() {
+
+				mui.back = function() {}
+
+				index = plus.webview.currentWebview();
+				var styles = {
+					top: '0',
+					bottom: '51px'
+				};
+				var tabsConfig = {
+					main: {
+						url: 'tab-main.html',
+						styles: styles,
+						default: true
+					},
+					school: {
+						url: 'tab-school.html',
+						styles: styles
+					},
+					cart: {
+						url: 'tab-cart.html',
+						styles: styles
+					},
+					mine: {
+						url: 'tab-mine.html',
+						styles: styles
+					}
+				};
+				for(id in tabsConfig) {
+					exists = plus.webview.getWebviewById(id);
+					if(exists !== null) {
+						exists.close();
+					}
+					tabs[id] = plus.webview.create(tabsConfig[id].url, id, tabsConfig[id].styles);
+					if(tabsConfig[id]['default']) {
+						current = id;
+					} else {
+						tabs[id].hide();
+					}
+					index.append(tabs[id]);
+				}
+				mui('#bar').on('tap', 'a', function(e) {
+					if(current == this.dataset['id']) {
+						mui.fire(tabs[current], 'scroll2top');
+						return;
+					}
+					switchTab(this.dataset['id']);
+				});
+
+			});
+
+			function switchTab(tab) {
+				document.getElementById(tab).classList.add('mui-active');
+				document.getElementById(current).classList.remove('mui-active');
+
+				if(tab != current) {
+					tabs[current].hide();
+					current = tab;
+				}
+				tabs[tab].show();
+				index.show();
+			}
+
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,385 @@
+body,
+.mui-bar {
+    background-color: white;
+}
+.no-line-height {
+    line-height: 0;
+}
+#header{
+	overflow: hidden;
+	height: 44px;
+	line-height: 44px;
+}
+#wrapper-slider {
+    padding-top: 44px;
+}
+
+#slider {
+    height: 150px;
+}
+.show {
+    overflow: hidden;
+    /*padding-bottom: 5px;*/
+}
+.show h4 {
+    font-weight: normal;
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+    background-color: #FFFFFF;
+    padding: 6px;
+    line-height: 26px;
+    /*border-bottom: 1px solid rgb(244, 244, 244);*/
+    box-shadow: none;
+    border-width: 1px 0;
+    border-top-width: 0px;
+	background-image:none,
+	none,
+	linear-gradient(0deg, #dbdbdb, #dbdbdb 50%, transparent 50%),
+	none;
+	background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+	background-repeat: no-repeat;
+	background-position: top, right top,  bottom, left top;
+    margin-bottom:0;
+}
+
+.show h4 a {
+    font-size: 16px;
+    color: #797979;
+}
+.show ul {
+    list-style: none;
+    margin: 0;
+    padding: 1% 0 0 1%;
+    font-size: 11px;
+    overflow: hidden;
+}
+#show li {
+    position: relative;
+    background-color: rgb(249, 249, 249);
+    width: 32.33%;
+    margin: 0 1% 1% 0;
+    float:left;
+    display: block;
+    line-height: 1.1;
+    vertical-align: top;
+    padding-bottom: 4px;
+}
+#show li:last-child{
+    margin-right: 0;
+}
+#show .school-label {
+    font-size: 8px;
+    position: absolute;
+    top: 0px;
+    color: white;
+    background-color: rgb(10, 210, 242);
+    padding: 4px 5px 4px 2px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+#show .inordertoshare{
+    color:#F30!important;
+    position:absolute;
+    top:12px;
+    right:4px;
+    font-size:1.4rem;
+}
+#show li:last-child {
+    margin-right: 0px;
+}
+#show .wrapper-img {
+    padding: 10px 10px 5px 10px;
+}
+
+#show .img {
+    width: 100%;
+    /*border: 1px solid rgb(233, 231, 231);*/
+	background-image:linear-gradient(180deg, #dbdbdb, #dbdbdb 50%, transparent 50%),
+	linear-gradient(270deg, #dbdbdb, #dbdbdb 50%, transparent 50%),
+	linear-gradient(0deg, #dbdbdb, #dbdbdb 50%, transparent 50%),
+	linear-gradient(90deg, #dbdbdb, #dbdbdb 50%, transparent 50%);
+	background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+	background-repeat: no-repeat;
+	background-position: top, right top,  bottom, left top;
+	background-color:#FFF;
+	padding:1px;
+}
+#show .title {
+    color: rgb(102, 102, 102);
+    padding: 0 3px;
+    font-size: 10px;
+    height: 16px;
+    width:90%;
+    margin:0 auto;
+}
+#show .link-show {
+    display: inline-block;
+}
+
+#lucky ul{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+#lucky ul:after{
+    box-shadow: none;
+    background:none;
+    height: 0;
+}
+#lucky li{
+    /*border-bottom: 1px solid rgb(244, 244, 244);*/
+    box-shadow: none;
+	background-image:none,
+	none,
+	linear-gradient(0deg, #dbdbdb, #dbdbdb 50%, transparent 50%),
+	none;
+	background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+	background-repeat: no-repeat;
+	background-position: top, right top,  bottom, left top;
+}
+
+
+#lucky li:last-child{
+    background-image:none;
+}
+
+.mui-table-view-cell:last-child>a:not(.mui-btn).mui-active{
+	background-image:none;
+}
+
+#lucky li:after{
+    content:none;
+    left:0;
+}
+
+#lucky .mui-media-object{
+	vertical-align: middle;
+	margin-top: 4px;
+}
+
+#lucky .nickname {
+    color: rgb(51, 51, 51);
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    max-width:58%;
+    max-height: 40px;
+    white-space:normal;
+    word-break: normal;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+#lucky .period_title{
+	color: rgb(51, 51, 51);
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    max-height: 40px;
+    white-space:normal;
+    word-break: normal;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+#lucky .desc {
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    width:100%;
+    margin-top:6px;
+}
+#lucky .school {
+    background-color: rgb(255, 235, 222);
+    color: rgb(102, 102, 102);
+    font-size: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 8px;
+    margin-top:-2px;
+}
+
+#lucky .date {
+    color: rgb(153, 153, 153);
+    float: right;
+}
+
+#main {
+    padding-top: 0;
+    background-color: #ffffff;
+}
+.more{
+    position: relative;
+    right:12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.more:after{
+    font-family: Muiicons;
+    font-size: inherit;
+    line-height: 1;
+    position: absolute;
+    top: 55%;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    -webkit-font-smoothing: antialiased;
+    content: '\e583';
+}
+ul.list {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    -webkit-padding-start: 0;
+    width: 100%;
+}
+ul.list a.icon-cart {
+    display: inline-block;
+}
+li.item {
+	position: relative;
+    list-style: none;
+    width: 50%;
+    float: left;
+	background-image:none,
+	linear-gradient(270deg, #dbdbdb, #dbdbdb 50%, transparent 50%),
+	linear-gradient(0deg, #dbdbdb, #dbdbdb 50%, transparent 50%),
+	none;
+	background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+	background-repeat: no-repeat;
+	background-position: top, right top,  bottom, left top;
+}
+
+li.item .school-label {
+    font-size: 8px;
+    position: absolute;
+    top: 5px;
+    color: white;
+    background-color: rgb(10, 210, 242);
+    padding: 4px 5px 4px 2px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+    line-height: 1;
+}
+li.item .wrapper-pic {
+    padding: 10px 30px;
+}
+
+li.item .pic {
+    width: 100%;
+	background-image:linear-gradient(180deg, #dbdbdb, #dbdbdb 50%, transparent 50%),
+	linear-gradient(270deg, #dbdbdb, #dbdbdb 50%, transparent 50%),
+	linear-gradient(0deg, #dbdbdb, #dbdbdb 50%, transparent 50%),
+	linear-gradient(90deg, #dbdbdb, #dbdbdb 50%, transparent 50%);
+	background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+	background-repeat: no-repeat;
+	background-position: top, right top,  bottom, left top;
+	padding:1px;
+	vertical-align: top;
+	box-shadow: none;
+}
+li.item p.desc {
+    width:86%;
+    background-color: white;
+    font-size: 13px;
+    margin: 0 auto 0;
+    color: rgb(102, 102, 102);
+    height: 2.3em;
+    line-height: 1.3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+li.item .bar {
+    position: relative;
+    width:90%;
+    margin:0 auto;
+}
+li.item a.left {
+    min-width: 77%;
+}
+li.item a.btn-want {
+    font-size: 22px;
+    position: absolute;
+    right: 2px;
+    top: 12px;
+    color: rgb(224, 90, 0);
+}
+li.item a.btn-want.disable {
+    color: rgb(100, 100, 100);
+}
+li.item .bar .process-box {
+    padding-left: 5px;
+    float: left;
+    width: 80%;
+}
+li.item .strong{
+    color:rgb(91,42,10);
+}
+li.item .bar .process-box p {
+    font-size: 10px;
+    margin: 0;
+    color: rgb(153, 153, 153);
+}
+li.item .bar .process-box .process-bar {
+    height: 5px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+}
+
+li.item .bar .process-box .process-bar .process-current {
+    height: 5px;
+    background-color: rgb(255, 220, 68);
+    background-image: linear-gradient(-90deg, rgb(255, 220, 68), rgb(252, 238, 133));
+    border-radius: 5px;
+}
+#segmentedControl {
+    display: block;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    /*border-bottom: 1px solid #F2F2F2;*/
+	background-image:none,
+	none,
+	linear-gradient(0deg, #dbdbdb, #dbdbdb 50%, transparent 50%),
+	none;
+	background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+	background-repeat: no-repeat;
+	background-position: top, right top,  bottom, left top;
+	vertical-align: top;
+}
+#segmentedControl .mui-control-item {
+    border: none;
+    color: rgb(102, 102, 102);
+    line-height: 40px;
+}
+#segmentedControl .mui-control-item.mui-active {
+    border: none;
+    border-bottom: 4px solid rgb(255, 220, 68);
+    background: none;
+}
+#category {
+    width: 150px;
+}
+#category .mui-table-view {
+	background: rgb(255, 255, 255);
+}
+
+.mui-popover .mui-popover-arrow:after {
+	background: rgb(255, 255, 255);
+}
+#category a {
+    padding-left: 25px;
+}
+#category a.mui-active {
+    background: none;
+}
+#box-content {
+    height: 100%;
+    min-height: 600px;
+}
+
+.box-empty{
+	padding-top: 10vh;
+}
